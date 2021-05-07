@@ -1,0 +1,6 @@
+<div class="container">
+<%= image_tag("logo_Plan de travail 1 copie 2.png", class: 'logo', id: 'identifier', alt: 'logo') %>
+<h1>Poste une annonce :</h1>
+<%= render 'form', annonce: @annonce %>
+
+<%= link_to 'Back', annonces_path %>

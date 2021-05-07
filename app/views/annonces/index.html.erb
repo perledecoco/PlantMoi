@@ -1,0 +1,86 @@
+<p id="notice"><%= notice %></p>
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+
+
+
+
+<tbody>
+<%= image_tag("logo_Plan de travail 1 copie 2.png", class: 'logo', id: 'identifier', alt: 'logo') %>
+
+    <div class="annonces">
+
+
+        <% @annonces.each do |annonce| %>
+
+
+        <tr>
+
+            <div class="post">
+
+                <div class="images">
+                    <%=  image_tag annonce.image %>
+                </div>
+
+
+
+
+                <div class="etiquette">
+
+
+
+                    <div class="etiquette-haut">
+
+
+
+                        <div class="etiquette-titre">
+                            <%= annonce.title %>
+                        </div>
+
+
+
+                        <div class="etiquettelocanom">
+                            <%= annonce.name %> <br>
+                            <%= annonce.localisation %>
+                        </div>
+
+
+                    </div>
+
+
+
+                    <div class="description">
+                        <%= annonce.description %>
+                    </div>
+
+
+
+                    <div class="button-show">
+                        <%= link_to "Je suis intéressé(e)", annonce %>
+                    </div>
+
+
+
+                </div>
+
+
+            </div>
+
+
+
+
+
+
+        </tr>
+
+
+        <% end %>
+    </div>
+
+</tbody>
+
+
+<br>
+
+<%= link_to '+', new_annonce_path %>

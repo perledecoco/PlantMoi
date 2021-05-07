@@ -1,0 +1,36 @@
+<p id="notice"><%= notice %></p>
+
+
+<div class="pancarte">
+<%= image_tag("pancarte-13.png", class: 'pancarteimg', id: 'identifier', alt: 'logo') %>
+
+
+
+
+<p>
+  <strong>Title:</strong>
+  <%= @annonce.title %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @annonce.name %>
+</p>
+
+<p>
+  <strong>Localisation:</strong>
+  <%= @annonce.localisation %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @annonce.description %>
+</p>
+
+<p>
+  <strong>Image:</strong>
+  <%= @annonce.image %>
+</p>
+</div>
+<%= link_to 'Edit', edit_annonce_path(@annonce) %> |
+<%= link_to 'Back', annonces_path %>
