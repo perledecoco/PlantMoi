@@ -4,7 +4,12 @@
 }
 
 body {
+  margin: 0;
   background-color: #f2f4df;
+  
+}
+html {
+  margin-top : -3vh;
 }
 
 body,
@@ -25,15 +30,17 @@ pre {
 
 a {
   color: #000;
+  text-decoration: none;
 }
 
 a:visited {
-  color: #666;
+  color: #f6f1f1;
 }
 
 a:hover {
-  color: #fff;
-  background-color: #000;
+  color: rgb(252, 244, 207);
+ 
+
 }
 
 th {
@@ -130,6 +137,7 @@ label {
 .etiquette {
   z-index: 1;
   display: flex;
+  align-items: center;
   background-color: #172316;
   border-radius: 39px;
   flex-direction: column;
@@ -145,7 +153,7 @@ label {
   width: 80%;
   margin-top: 3vh;
   justify-content: space-between;
-  margin-left: 2vw;
+ 
 }
 
 .etiquette-titre {
@@ -160,6 +168,7 @@ label {
 }
 .etiquettelocanom {
   display: flex;
+  flex-direction: column;
   text-align: end;
   font-family: "Poppins", sans-serif;
   font-size: 15px;
@@ -170,7 +179,24 @@ label {
 .etiquettelocanom .name {
   color: #c8d47a;
 }
-
+.new {
+  position: absolute;
+  
+  top: 7vh;
+  right: 7vh;
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 1vh;
+    padding-bottom: 1.5vh;
+    font-size: 30px;
+  color: #f6f1f1;
+  border-radius: 50%;
+  background-color:  #e3401c;
+}
+}
 .description {
   margin-top: 3vh;
   margin-left: 2vw;
@@ -183,8 +209,8 @@ label {
 }
 
 .button-show {
-  position: absolute;
-  margin-block: 22vh;
+
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -207,10 +233,16 @@ label {
   background-color: #e3401c;
 }
 
-.container {
-  width: 100%;
-  height: 100%;
-  background-color: #c8d47a;
+
+
+  
+
+.box {
+  background-image: image-url('page-13.png'); 
+  background-size: 100%;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
 }
 
 h1{
@@ -339,9 +371,9 @@ margin-bottom: 8vh;
   background-color: #f2f4df;
   border-color: #172316;
   border-width: 1px;
-  border-radius: 39px;
+  border-radius: 23px;
   width: 40vh;
-  height: 4vh;
+  height: 18vh;
   margin-bottom: 3vh
 }
 
@@ -359,15 +391,105 @@ margin-bottom: 8vh;
 
 }
 
-.pancarte{
+.ContainerShow{
+  width: 100vw;
+  height: 100vh;
+  background-color: #000;
   display: flex;
   justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: auto;
-  background-color: #172316;
+  
 }
 
-.pancarteimg{
-  width: 50%;
+.MiniContainer{
+  width: 70vw;
+  height: 100vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+ background-size: 80%;
+  background-image: image-url('pancarte-13.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  
+}
+  
+
+.infosbox{
+  display: flex;
+  width: 35vw;
+  height: 70vh;
+  margin-right: 9vw;
+  
+}
+.back {
+  padding: 1vh;
+  position: absolute;
+  top: 6vh;
+  left : 6vh; 
+  font-size: 15px;
+  background-color: #e3401c;
+  border-radius: 20px;
+  a:visited {
+  color: #e3401c;
+
+ 
+}
+}
+.infos{
+  width: 100%;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  margin-top: 6vh;
+}
+
+.titreshow{
+  display: flex;
+  justify-content: center;
+  font-family: "Coolvetica";
+  font-size: 50px;
+  color: #172316;
+  margin-bottom: 10vh;
+  width: 100%;
+
+}
+
+.nameshow{
+  display: flex;
+  margin-left: 4vw;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+  color: #172316;
+  margin-bottom: 1vh;
+  width: 100%;
+
+}
+
+.localisationshow{
+  display: flex;
+  font-family: "Poppins", sans-serif;
+  font-weight: normal;
+  font-style: italic;
+  font-size: 25px;
+  color: #172316;
+  margin-bottom: 10vh;
+  width: 100%;
+  margin-left: 4vw;
+
+}
+
+.descriptionshow{
+  display: flex;
+  justify-content: flex-end;
+  font-family: "Poppins", sans-serif;
+  font-weight: medium;
+  line-height: 1.10;
+  font-size: 30px;
+  color: #172316;
+  margin-bottom: 3vh;
+  width: 90%;
+  padding-left: 2vw;
+  text-align: right;
+
 }

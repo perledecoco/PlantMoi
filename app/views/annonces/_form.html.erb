@@ -15,7 +15,7 @@
 
 
 
-<div class="container">
+
 <div class="zoneformulaire">
 
     <div class="colonne1">
@@ -49,7 +49,7 @@
 
         <div class="fielddescription">
             <%= form.label :description %>
-            <%= form.text_field :description %>
+            <%= form.text_field :description, maxlength: 160 %>
         </div>
 
 
@@ -64,4 +64,3 @@
     <% end %>
 </div>
 
-</div>
