@@ -111,13 +111,18 @@ label {
   }
 }
 .logo {
-  width: 35vw;
+  width: 15vw;
   height: auto;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 3vh;
-  margin-bottom: 12vh;
+  margin-top: 5vh;
+  
+  
+}
+.edit {
+  margin-left: 4vw;
+  color: #172316;
 }
 .post {
   display: flex;
@@ -480,6 +485,7 @@ margin-bottom: 8vh;
   margin-bottom: 10vh;
   width: 100%;
   margin-left: 4vw;
+  margin-top: 15px;
 
 }
 
@@ -489,7 +495,7 @@ margin-bottom: 8vh;
   font-family: "Poppins", sans-serif;
   font-weight: medium;
   line-height: 1.10;
-  font-size: 30px;
+  font-size: 25px;
   color: #172316;
   margin-bottom: 3vh;
   width: 90%;
