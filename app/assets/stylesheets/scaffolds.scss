@@ -1,6 +1,10 @@
 @font-face {
   font-family: "Coolvetica";
-  src: url("/fonts/coolvetica rg.ttf") format("ttf");
+  src: url("//app/assets/fonts/coolveticaRg.ttf") format("ttf");
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("//app/assets/fonts/Poppins-Regular.ttf") format("ttf");
 }
 
 body {
@@ -162,7 +166,7 @@ label {
   width: 50%;
   flex-direction: column;
   text-align: start;
-  font-family: "Coolvetica";
+  font-family: "Poppins";
   font-size: 23px;
   color: #f6f1f1;
 }
