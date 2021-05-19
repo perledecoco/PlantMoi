@@ -120,6 +120,15 @@ label {
   
   
 }
+.logoMain{
+  width: 50vw;
+  height: auto;
+  position: relative;
+  margin-left: 25vw;
+  margin-right: 25vw;
+  display: block;
+  margin-top: 3vh;
+}
 .edit {
   margin-left: 4vw;
   color: #172316;
@@ -131,6 +140,7 @@ label {
   width: 33%;
   height: 60vh;
   margin-bottom: 25vh;
+  margin-top: 15vh;
 }
 
 .annonces {
@@ -140,7 +150,7 @@ label {
   flex-wrap: wrap;
 
   width: 100%;
-  height: 100%;
+  height: 50vh;
 }
 
 .etiquette {
